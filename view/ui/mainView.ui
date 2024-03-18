@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QMainWindow" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Simulacion</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>875</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEstadistica">
+    <property name="title">
+     <string>Estadistica</string>
+    </property>
+    <addaction name="qa_linear_regression"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="qa_informacion"/>
+    <addaction name="qa_acerca"/>
+   </widget>
+   <addaction name="menuEstadistica"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDesarrolladores">
+   <property name="text">
+    <string>DPS</string>
+   </property>
+  </action>
+  <action name="qa_financiamiento_con_deuda">
+   <property name="text">
+    <string>Financiamiento con Deuda</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="btnReportarTransferencias">
+   <property name="text">
+    <string>Reportar Transferencias</string>
+   </property>
+  </action>
+  <action name="btnHistorialTransferencias">
+   <property name="text">
+    <string>Historial de Transferencias</string>
+   </property>
+  </action>
+  <action name="qa_CAMP">
+   <property name="text">
+    <string>CAMP</string>
+   </property>
+  </action>
+  <action name="qa_financiamiento_acciones_preferentes">
+   <property name="text">
+    <string>Financiamiento Acciones Preferentes</string>
+   </property>
+  </action>
+  <action name="btn_personal">
+   <property name="text">
+    <string>Personal</string>
+   </property>
+  </action>
+  <action name="btn_first_fortnight">
+   <property name="text">
+    <string>Primera Quincena</string>
+   </property>
+  </action>
+  <action name="btn_segunda_quincena">
+   <property name="text">
+    <string>Segunda Quincena</string>
+   </property>
+  </action>
+  <action name="actionRendimiento_por_dividendo">
+   <property name="text">
+    <string>Rendimiento por dividendo</string>
+   </property>
+  </action>
+  <action name="actionCAPM">
+   <property name="text">
+    <string>CAPM</string>
+   </property>
+  </action>
+  <action name="qa_modelo_crecimiento_constante_dividendo">
+   <property name="text">
+    <string>Modelo del crecimiento constante del dividendo</string>
+   </property>
+  </action>
+  <action name="qa_precio_accion_hoy">
+   <property name="text">
+    <string>Precio acción hoy</string>
+   </property>
+  </action>
+  <action name="qa_rendimiento_esperado">
+   <property name="text">
+    <string>Rendimiento Esperado</string>
+   </property>
+  </action>
+  <action name="qa_rendimiento_requerido">
+   <property name="text">
+    <string>Rendimiento Requerido</string>
+   </property>
+  </action>
+  <action name="qa_rendimiento_esperado_multiple">
+   <property name="text">
+    <string>Rendimiento Esperado Multiple (Probabilidad Ocurrencia)</string>
+   </property>
+  </action>
+  <action name="qa_desviacion_estandar">
+   <property name="text">
+    <string>Desviación estándar
+</string>
+   </property>
+  </action>
+  <action name="qa_linear_regression">
+   <property name="text">
+    <string>Regresión Lineal</string>
+   </property>
+  </action>
+  <action name="qa_capital_market_line">
+   <property name="text">
+    <string>Capital Market Line</string>
+   </property>
+  </action>
+  <action name="qa_security_market_line">
+   <property name="text">
+    <string>Security Market Line</string>
+   </property>
+  </action>
+  <action name="qa_varianza">
+   <property name="text">
+    <string>Varianza</string>
+   </property>
+  </action>
+  <action name="qa_covarianza">
+   <property name="text">
+    <string>Covarianza</string>
+   </property>
+  </action>
+  <action name="qa_VP">
+   <property name="text">
+    <string>VP</string>
+   </property>
+  </action>
+  <action name="qa_VPF">
+   <property name="text">
+    <string>VPF</string>
+   </property>
+  </action>
+  <action name="qa_VPN">
+   <property name="text">
+    <string>VPN</string>
+   </property>
+  </action>
+  <action name="qa_VF">
+   <property name="text">
+    <string>VF</string>
+   </property>
+  </action>
+  <action name="qa_TIR">
+   <property name="text">
+    <string>TIR</string>
+   </property>
+  </action>
+  <action name="qa_TMAR">
+   <property name="text">
+    <string>TMAR</string>
+   </property>
+  </action>
+  <action name="qa_informacion">
+   <property name="text">
+    <string>Información</string>
+   </property>
+  </action>
+  <action name="qa_acerca">
+   <property name="text">
+    <string>Acerca</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

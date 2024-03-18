@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Regresión Lineal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+
+width: 70%;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_title">
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>18</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 italic 18pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Regresión Lineal</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 600 18pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Ingrese los valores separados por una coma</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txt_nombre_empresa_x">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Ingrese el nombre de la variable independiente x</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txt_x">
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>x</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txt_nombre_empresa_y">
+      <property name="placeholderText">
+       <string>Ingrese el nombre de la variable dependiente y</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="txt_y">
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>16</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>y</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btn_calcular">
+        <property name="text">
+         <string>Calcular</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cb_digitos">
+        <item>
+         <property name="text">
+          <string>Digitos</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Todos</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_limpiar">
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_generar_pdf">
+        <property name="text">
+         <string>Generar PDF</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTextBrowser" name="tb_resultado"/>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QWidget" name="widgetGrafico" native="true"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
