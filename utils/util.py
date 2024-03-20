@@ -89,17 +89,20 @@ def mostrar_resultado_tablas(datos_listas, tb_resultado, *nombres_columnas):
     tb_resultado.setHtml(style + table)
 
 
-def generar_pdf_dialogo(title, datos_tabla, grafica='', other_data='',name_table2='', other_data2='', other_data3=''):
+def generar_pdf_dialogo(title, datos_tabla, grafica='', other_data='', name_table2='', other_data2='', other_data3='',
+                        other_data4=''):
     fileName, _ = QFileDialog.getSaveFileName(None, "Guardar reporte", "", "PDF Files (*.pdf)")
     if fileName:
         if not fileName.endswith('.pdf'):
             fileName += '.pdf'
-        generar_pdf(fileName, title, datos_tabla, grafica, other_data,name_table2, other_data2, other_data3)
+        generar_pdf(fileName, title, datos_tabla, grafica, other_data, name_table2, other_data2, other_data3,
+                    other_data4)
     else:
         print("Generación de PDF cancelada.")
 
 
-def generar_pdf(fileName, title, datos_tabla, grafica='', other_data='',name_table2='', other_data2='', other_data3=''):
+def generar_pdf(fileName, title, datos_tabla, grafica='', other_data='', name_table2='', other_data2='', other_data3='',
+                other_data4=''):
     pdf = SimpleDocTemplate(fileName, pagesize=letter)
     flowables = []
 
@@ -139,6 +142,10 @@ def generar_pdf(fileName, title, datos_tabla, grafica='', other_data='',name_tab
         tabla3 = Table(other_data3)
         tabla3.setStyle(style)
         flowables.append(tabla3)
+
+    if other_data4 != '':
+        p = Paragraph(other_data4, styles["Heading3"])
+        flowables.append(p)
 
     if os.path.exists(grafica):
         imagen = Image(grafica, width=400, height=200)

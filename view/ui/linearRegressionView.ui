@@ -55,6 +55,13 @@ width: 70%;</string>
      </widget>
     </item>
     <item>
+     <widget class="QLabel" name="lbl_relation">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QLineEdit" name="txt_nombre_empresa_x">
       <property name="text">
        <string/>
